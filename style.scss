@@ -27,7 +27,7 @@ header {
 }
 .main-menu {
   max-width: 600px;
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
   text-align: center;
   position: relative;
@@ -65,31 +65,30 @@ header {
     width: 90%;
     margin: 5px auto;
 
-    a {
-      text-decoration: none;
+    .c-menu-row {
       font-size: 20px;
       color: #000;
       text-align: left;
-    }
-    .c-item-image {
-      width: 90%;
-      height: 90%;
-      max-height: 50px;
-      max-width: 50px;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-    }
-
-    .row:nth-child(1) {
-      position: relative;
-    }
-
-    .item-description {
-      font-style: italic;
-      font-size: 19px;
-      color: gray;
+      .c-item-image {
+        width: 90%;
+        height: 90%;
+        max-height: 50px;
+        max-width: 50px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+      .c-col-item {
+        .item-description {
+          font-style: italic;
+          font-size: 19px;
+          color: gray;
+        }
+      }
+      .row:nth-child(1) {
+        position: relative;
+      }
     }
   }
 }

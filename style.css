@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Alegreya', serif;
+  font-family: "Alegreya", serif;
 }
 
 header {
@@ -32,7 +32,7 @@ header .c-nav-brand h1 {
 
 .main-menu {
   max-width: 600px;
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
   text-align: center;
   position: relative;
@@ -78,14 +78,13 @@ header .c-nav-brand h1 {
   margin: 5px auto;
 }
 
-.main-menu .panel a {
-  text-decoration: none;
+.main-menu .panel .c-menu-row {
   font-size: 20px;
   color: #000;
   text-align: left;
 }
 
-.main-menu .panel .c-item-image {
+.main-menu .panel .c-menu-row .c-item-image {
   width: 90%;
   height: 90%;
   max-height: 50px;
@@ -96,13 +95,13 @@ header .c-nav-brand h1 {
   margin: auto;
 }
 
-.main-menu .panel .row:nth-child(1) {
-  position: relative;
-}
-
-.main-menu .panel .item-description {
+.main-menu .panel .c-menu-row .c-col-item .item-description {
   font-style: italic;
   font-size: 19px;
   color: gray;
+}
+
+.main-menu .panel .c-menu-row .row:nth-child(1) {
+  position: relative;
 }
 /*# sourceMappingURL=style.css.map */

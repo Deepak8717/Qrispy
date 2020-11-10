@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <title>Menu</title>
 </head>
+
 <body>
     <header class="d-flex justify-content-between align-items-center px-1 px-sm-5">
         <nav>
@@ -17,37 +20,242 @@
         </nav>
         <div>
             <i class="fa fa-search mr-1 mr-sm-3" aria-hidden="true"></i>
-            <i class='fas fa-cart-plus'></i>
+            <i class="fas fa-cart-plus"></i>
         </div>
     </header>
     <div class="main-menu">
         <h2>Menu</h2>
         <button class="accordion">
             <span>
-                <i class='fas fa-glass-martini'></i>
-            Drinks
+                <i class="fas fa-glass-martini"></i>
+                Drinks
             </span>
         </button>
         <div class="panel">
-            
-                    <a href="#">
-                        <div class="row">
-                            <div class="col-2 px-0 ">
-                                <img class="c-item-image"src="Assets/coffee.jpeg">
-                            </div>
-                            <div class="col-7 px-0 ">
-                                <div><h4>Coffee</h4></div>
-                                <p class="item-description">A lot can happen over a cup of Coffee</p>
-                            </div>
-                            <div class="col-3 px-0 d-flex flex-column justify-content-center align-items-center ">
-                                <div>&#8377; <span>150</span></div>
-                                <div><button class="btn btn-primary"><i class='fas fa-plus'></i></button></div>
-                            </div>
-                        </div>
-                    </a>
-               
+            <div class="row mb-2 c-menu-row">
+                <div class="col-2 px-0">
+                    <img class="c-item-image" src="Assets/coffee.jpeg" />
+                </div>
+                <div class="col-7 px-0 pl-1 c-col-item">
+                    <div>
+                        <h4>Coffee</h4>
+                    </div>
+                    <p class="item-description">
+                        A lot can happen over a cup of Coffee
+                    </p>
+                </div>
+                <div class="col-3 px-0 d-flex flex-column justify-content-center align-items-end">
+                    <div>&#8377; <span>150</span></div>
+                    <div>
+                        <button class="btn btn-primary">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-2 c-menu-row">
+                <div class="col-2 px-0">
+                    <img class="c-item-image" src="Assets/tea.jpg" />
+                </div>
+                <div class="col-7 px-0 pl-1 c-col-item">
+                    <div>
+                        <h4>Chai</h4>
+                    </div>
+                    <p class="item-description">A hot cup of tea</p>
+                </div>
+                <div class="col-3 px-0 d-flex flex-column justify-content-center align-items-end">
+                    <div>&#8377; <span>20</span></div>
+                    <div>
+                        <button class="btn btn-primary">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-2 c-menu-row">
+                <div class="col-2 px-0">
+                    <img class="c-item-image" src="Assets/mujito.jpeg" />
+                </div>
+                <div class="col-7 px-0 pl-1 c-col-item">
+                    <div>
+                        <h4>Mojito</h4>
+                    </div>
+                    <p class="item-description">Drink</p>
+                </div>
+                <div class="col-3 px-0 d-flex flex-column justify-content-center align-items-end">
+                    <div>&#8377; <span>150</span></div>
+                    <div>
+                        <button class="btn btn-primary">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-2 c-menu-row">
+                <div class="col-2 px-0">
+                    <img class="c-item-image" src="Assets/Buttermilk.jpeg" />
+                </div>
+                <div class="col-7 px-0 pl-1 c-col-item">
+                    <div>
+                        <h4>ButterMilk</h4>
+                    </div>
+                    <p class="item-description">Perfect drink after good meal</p>
+                </div>
+                <div class="col-3 px-0 d-flex flex-column justify-content-center align-items-end">
+                    <div>&#8377; <span>60</span></div>
+                    <div>
+                        <button class="btn btn-primary">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-2 c-menu-row">
+                <div class="col-2 px-0">
+                    <img class="c-item-image" src="Assets/coke.jpeg" />
+                </div>
+                <div class="col-7 px-0 pl-1 c-col-item">
+                    <div>
+                        <h4>Cocacola</h4>
+                    </div>
+                    <p class="item-description">Softdrink</p>
+                </div>
+                <div class="col-3 px-0 d-flex flex-column justify-content-center align-items-end">
+                    <div>&#8377; <span>30</span></div>
+                    <div>
+                        <button class="btn btn-primary">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-2 c-menu-row">
+                <div class="col-2 px-0">
+                    <img class="c-item-image" src="Assets/Lemonade.jpeg" />
+                </div>
+                <div class="col-7 px-0 pl-1 c-col-item">
+                    <div>
+                        <h4>Lemonade</h4>
+                    </div>
+                    <p class="item-description">Nimbu and salt, deadly combo</p>
+                </div>
+                <div class="col-3 px-0 d-flex flex-column justify-content-center align-items-end">
+                    <div>&#8377; <span>100</span></div>
+                    <div>
+                        <button class="btn btn-primary">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-2 c-menu-row">
+                <div class="col-2 px-0">
+                    <img class="c-item-image" src="Assets/soda-lemon.jpeg" />
+                </div>
+                <div class="col-7 px-0 pl-1 c-col-item">
+                    <div>
+                        <h4>Chilled Soda Lemon</h4>
+                    </div>
+                    <p class="item-description">Fizzy and Awesome</p>
+                </div>
+                <div class="col-3 px-0 d-flex flex-column justify-content-center align-items-end">
+                    <div>&#8377; <span>40</span></div>
+                    <div>
+                        <button class="btn btn-primary">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="accordion">
+            <span>
+            <i class='fas fa-hamburger'></i>
+            Burgers
+            </span>
+        </button>
+        <div class="panel">
+            <div class="row mb-2 c-menu-row">
+                <div class="col-2 px-0">
+                    <img class="c-item-image" src="Assets/paneer-burger.jpeg" />
+                </div>
+                <div class="col-7 px-0 pl-1 c-col-item">
+                    <div>
+                        <h4>Roasted Paneer Burger</h4>
+                    </div>
+                    <p class="item-description">
+                        Tasty and crunchy burger loaded with Cheese
+                    </p>
+                </div>
+                <div class="col-3 px-0 d-flex flex-column justify-content-center align-items-end">
+                    <div>&#8377; <span>140</span></div>
+                    <div>
+                        <button class="btn btn-primary">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-2 c-menu-row">
+                <div class="col-2 px-0">
+                    <img class="c-item-image" src="Assets/chicken-burger.jpeg" />
+                </div>
+                <div class="col-7 px-0 pl-1 c-col-item">
+                    <div>
+                        <h4>Chicken Burger</h4>
+                    </div>
+                    <p class="item-description">Delicious Chicken in every bite</p>
+                </div>
+                <div class="col-3 px-0 d-flex flex-column justify-content-center align-items-end">
+                    <div>&#8377; <span>200</span></div>
+                    <div>
+                        <button class="btn btn-primary">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-2 c-menu-row">
+                <div class="col-2 px-0">
+                    <img class="c-item-image" src="Assets/momo-burger.jpeg" />
+                </div>
+                <div class="col-7 px-0 pl-1 c-col-item">
+                    <div>
+                        <h4>Momo Burger</h4>
+                    </div>
+                    <p class="item-description">Momo filled burger</p>
+                </div>
+                <div class="col-3 px-0 d-flex flex-column justify-content-center align-items-end">
+                    <div>&#8377; <span>240</span></div>
+                    <div>
+                        <button class="btn btn-primary">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-2 c-menu-row">
+                <div class="col-2 px-0">
+                    <img class="c-item-image" src="Assets/veg-cheese-burger.jpeg" />
+                </div>
+                <div class="col-7 px-0 pl-1 c-col-item">
+                    <div>
+                        <h4>Veg Cheese Burger</h4>
+                    </div>
+                    <p class="item-description">Chease Burger with Veggie patty</p>
+                </div>
+                <div class="col-3 px-0 d-flex flex-column justify-content-center align-items-end">
+                    <div>&#8377; <span>140</span></div>
+                    <div>
+                        <button class="btn btn-primary">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>            
         </div>
     </div>
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
+
 </html>
