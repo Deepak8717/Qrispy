@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
-  font-family: "Alegreya", serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 header {
@@ -82,26 +82,48 @@ header .c-nav-brand h1 {
   font-size: 20px;
   color: #000;
   text-align: left;
-}
-
-.main-menu .panel .c-menu-row .c-item-image {
-  width: 90%;
-  height: 90%;
-  max-height: 50px;
-  max-width: 50px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
+  padding-left: 2%;
 }
 
 .main-menu .panel .c-menu-row .c-col-item .item-description {
   font-style: italic;
-  font-size: 19px;
+  font-size: 18px;
   color: gray;
 }
 
 .main-menu .panel .c-menu-row .row:nth-child(1) {
   position: relative;
+}
+
+.main-menu .panel .c-menu-row .veg {
+  display: inline;
+  position: relative;
+}
+
+.main-menu .panel .c-menu-row .veg::after {
+  content: "";
+  position: absolute;
+  right: -30px;
+  top: 4px;
+  width: 20px;
+  height: 20px;
+  background: url("https://img.icons8.com/color/78/000000/vegetarian-food-symbol.png");
+  background-size: contain;
+}
+
+.main-menu .panel .c-menu-row .non-veg {
+  display: inline;
+  position: relative;
+}
+
+.main-menu .panel .c-menu-row .non-veg::after {
+  content: "";
+  position: absolute;
+  right: -30px;
+  top: 4px;
+  width: 20px;
+  height: 20px;
+  background: url("https://img.icons8.com/color/78/000000/non-vegetarian-food-symbol.png");
+  background-size: contain;
 }
 /*# sourceMappingURL=style.css.map */
