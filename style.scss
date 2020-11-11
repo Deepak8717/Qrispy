@@ -31,6 +31,7 @@ header {
   margin: 0 auto;
   text-align: center;
   position: relative;
+ 
   top: 80px;
   h2 {
     font-size: 35px;
@@ -62,59 +63,65 @@ header {
   }
   .panel {
     display: block;
-    width: 90%;
+    width: 85%;
     margin: 5px auto;
+     position: relative;
 
     .c-menu-row {
       font-size: 20px;
       color: #000;
       text-align: left;
       padding-left: 2%;
+      @media (max-width:399px){
+       padding-left: 4%;
+      }
 
       .c-col-item {
+        h4{
+          @media (max-width:399px){
+            font-size: 1.3rem;
+           }
+        }
+        .veg{
+          &::after{
+            content: "";
+            position: absolute;
+            left:-18px;
+            top:4px;
+            width:20px;
+            height: 20px;
+            background: url("https://img.icons8.com/color/78/000000/vegetarian-food-symbol.png");
+            background-size: contain;    
+              
+          }
+        }
+        .non-veg{
+          &::after{
+            content: "";
+            position: absolute;
+            left:-18px;
+            top:4px;
+            width:20px;
+            height: 20px;
+            background: url("https://img.icons8.com/color/78/000000/non-vegetarian-food-symbol.png");
+            background-size: contain;    
+              
+          }
+        }
         .item-description {
           font-style: italic;
           font-size: 18px;
           color: gray;
+          @media (max-width:399px){
+            font-size: 15px;
+          }
         }
       }
-      .row:nth-child(1) {
-          position: relative;
-      }
-      .veg{
-        display: inline;
-        position: relative;
-
-        &::after{
-          content: "";
-          position: absolute;
-          right:-30px;
-          top:4px;
-          width:20px;
-          height: 20px;
-          background: url("https://img.icons8.com/color/78/000000/vegetarian-food-symbol.png");
-          background-size: contain;    
-            
-        }
-      }
-      .non-veg{
-        display: inline;
-        position: relative;
-
-        &::after{
-          content: "";
-          position: absolute;
-          right:-30px;
-          top:4px;
-          width:20px;
-          height: 20px;
-          background: url("https://img.icons8.com/color/78/000000/non-vegetarian-food-symbol.png");
-          background-size: contain;    
-            
+      .c-col-price{
+        @media (max-width:399px){
+          font-size: 16px;
         }
       }
     }
   }
-
-
 }
