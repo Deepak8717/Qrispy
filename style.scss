@@ -130,13 +130,24 @@ header {
 .c-bill-container{
   position: relative;
   max-width:600px ;
-  @media (max-width:399px) {
+  @media screen and (max-width:399px) {
     font-size: 0.9rem;
+  }
+  @media print {
+    width: 350px;
+  }
+  .non-print{
+    @media print{
+      display: none;
+    }
   }
   width:95%;
   h4{
     @media (max-width:399px) {
       font-size: 1.2rem;
+    }
+    @media print{
+      font-size: 2rem;
     }
   }
   h5{
@@ -144,6 +155,9 @@ header {
     margin-bottom:2px;
     @media (max-width:399px) {
       font-size: 1rem;
+    }
+    @media print{
+      font-size: 1.5rem;
     }
   }
   .c-order-complete-btn{

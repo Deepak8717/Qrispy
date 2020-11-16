@@ -144,15 +144,33 @@ header .c-nav-brand h1 {
   width: 95%;
 }
 
-@media (max-width: 399px) {
+@media screen and (max-width: 399px) {
   .c-bill-container {
     font-size: 0.9rem;
+  }
+}
+
+@media print {
+  .c-bill-container {
+    width: 350px;
+  }
+}
+
+@media print {
+  .c-bill-container .non-print {
+    display: none;
   }
 }
 
 @media (max-width: 399px) {
   .c-bill-container h4 {
     font-size: 1.2rem;
+  }
+}
+
+@media print {
+  .c-bill-container h4 {
+    font-size: 2rem;
   }
 }
 
@@ -164,6 +182,12 @@ header .c-nav-brand h1 {
 @media (max-width: 399px) {
   .c-bill-container h5 {
     font-size: 1rem;
+  }
+}
+
+@media print {
+  .c-bill-container h5 {
+    font-size: 1.5rem;
   }
 }
 
@@ -230,16 +254,5 @@ header .c-nav-brand h1 {
   border-radius: 10px;
   background: #dadaff;
   color: blue;
-}
-
-.c-footer {
-  max-width: 600px;
-  width: 90%;
-  background: #fbd84a;
-  position: fixed;
-  bottom: 0;
-  -webkit-transform: translateX(280px);
-          transform: translateX(280px);
-  z-index: 10;
 }
 /*# sourceMappingURL=style.css.map */
