@@ -5,6 +5,40 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.veg::after {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 3px;
+  width: 20px;
+  height: 20px;
+  background: url("https://img.icons8.com/color/78/000000/vegetarian-food-symbol.png");
+  background-size: contain;
+}
+
+.non-veg::after {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 3px;
+  width: 20px;
+  height: 20px;
+  background: url("https://img.icons8.com/color/78/000000/non-vegetarian-food-symbol.png");
+  background-size: contain;
+}
+
+.item-description {
+  font-style: italic;
+  font-size: 18px;
+  color: gray;
+}
+
+@media (max-width: 399px) {
+  .item-description {
+    font-size: 15px;
+  }
+}
+
 header {
   width: 100%;
   height: 65px;
@@ -98,43 +132,114 @@ header .c-nav-brand h1 {
   }
 }
 
-.main-menu .panel .c-menu-row .c-col-item .veg::after {
-  content: "";
-  position: absolute;
-  left: -20px;
-  top: 3px;
-  width: 20px;
-  height: 20px;
-  background: url("https://img.icons8.com/color/78/000000/vegetarian-food-symbol.png");
-  background-size: contain;
-}
-
-.main-menu .panel .c-menu-row .c-col-item .non-veg::after {
-  content: "";
-  position: absolute;
-  left: -20px;
-  top: 3px;
-  width: 20px;
-  height: 20px;
-  background: url("https://img.icons8.com/color/78/000000/non-vegetarian-food-symbol.png");
-  background-size: contain;
-}
-
-.main-menu .panel .c-menu-row .c-col-item .item-description {
-  font-style: italic;
-  font-size: 18px;
-  color: gray;
-}
-
-@media (max-width: 399px) {
-  .main-menu .panel .c-menu-row .c-col-item .item-description {
-    font-size: 15px;
-  }
-}
-
 @media (max-width: 399px) {
   .main-menu .panel .c-menu-row .c-col-price {
     font-size: 16px;
   }
+}
+
+.c-bill-container {
+  position: relative;
+  max-width: 600px;
+  width: 95%;
+}
+
+@media (max-width: 399px) {
+  .c-bill-container {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 399px) {
+  .c-bill-container h4 {
+    font-size: 1.2rem;
+  }
+}
+
+.c-bill-container h5 {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+@media (max-width: 399px) {
+  .c-bill-container h5 {
+    font-size: 1rem;
+  }
+}
+
+.c-bill-container .c-order-complete-btn {
+  padding: 3px;
+  font-size: 0.55rem;
+  color: #d90460;
+  border-color: #d90460;
+  border-radius: 30px;
+  margin-bottom: 5px;
+}
+
+.c-bill-container .bill-quantity {
+  border: 2px solid green;
+  margin: 0px 2px;
+  padding: 0px 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.c-bill-container .item-description {
+  margin: 0px 0px 3px 0px;
+  font-size: 13px;
+}
+
+.c-bill-container .veg::after {
+  top: 7px;
+  width: 15px;
+  height: 15px;
+  left: -5px;
+}
+
+@media (max-width: 399px) {
+  .c-bill-container .veg::after {
+    top: 4px;
+  }
+}
+
+.c-bill-container .non-veg::after {
+  top: 7px;
+  width: 15px;
+  height: 15px;
+  left: -5px;
+}
+
+@media (max-width: 399px) {
+  .c-bill-container .non-veg::after {
+    top: 4px;
+  }
+}
+
+.c-bill-container .c-font-size-1 {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 399px) {
+  .c-bill-container .c-font-size-1 {
+    font-size: 0.8rem;
+  }
+}
+
+.c-bill-container .c-color-blue {
+  border-color: blue !important;
+  border-radius: 10px;
+  background: #dadaff;
+  color: blue;
+}
+
+.c-footer {
+  max-width: 600px;
+  width: 90%;
+  background: #fbd84a;
+  position: fixed;
+  bottom: 0;
+  -webkit-transform: translateX(280px);
+          transform: translateX(280px);
+  z-index: 10;
 }
 /*# sourceMappingURL=style.css.map */

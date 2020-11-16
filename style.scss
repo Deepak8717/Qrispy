@@ -7,6 +7,40 @@ $header-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   padding: 0;
   font-family: 'Montserrat', sans-serif;
 }
+.veg{
+    &::after{
+      content: "";
+      position: absolute;
+      left:-20px;
+      top:3px;
+      width:20px;
+      height: 20px;
+      background: url("https://img.icons8.com/color/78/000000/vegetarian-food-symbol.png");
+      background-size: contain;    
+        
+    }
+}
+.non-veg{
+          &::after{
+            content: "";
+            position: absolute;
+            left:-20px;
+            top:3px;
+            width:20px;
+            height: 20px;
+            background: url("https://img.icons8.com/color/78/000000/non-vegetarian-food-symbol.png");
+            background-size: contain;    
+              
+          }
+}
+.item-description {
+  font-style: italic;
+  font-size: 18px;
+  color: gray;
+  @media (max-width:399px){
+    font-size: 15px;
+  }
+}
 header {
   width: 100%;
   height: 65px;
@@ -82,40 +116,8 @@ header {
             font-size: 1.2rem;
            }
         }
-        .veg{
-          &::after{
-            content: "";
-            position: absolute;
-            left:-20px;
-            top:3px;
-            width:20px;
-            height: 20px;
-            background: url("https://img.icons8.com/color/78/000000/vegetarian-food-symbol.png");
-            background-size: contain;    
-              
-          }
-        }
-        .non-veg{
-          &::after{
-            content: "";
-            position: absolute;
-            left:-20px;
-            top:3px;
-            width:20px;
-            height: 20px;
-            background: url("https://img.icons8.com/color/78/000000/non-vegetarian-food-symbol.png");
-            background-size: contain;    
-              
-          }
-        }
-        .item-description {
-          font-style: italic;
-          font-size: 18px;
-          color: gray;
-          @media (max-width:399px){
-            font-size: 15px;
-          }
-        }
+        
+        
       }
       .c-col-price{
         @media (max-width:399px){
@@ -124,4 +126,78 @@ header {
       }
     }
   }
+}
+.c-bill-container{
+  position: relative;
+  max-width:600px ;
+  @media (max-width:399px) {
+    font-size: 0.9rem;
+  }
+  width:95%;
+  h4{
+    @media (max-width:399px) {
+      font-size: 1.2rem;
+    }
+  }
+  h5{
+    margin-top:2px;
+    margin-bottom:2px;
+    @media (max-width:399px) {
+      font-size: 1rem;
+    }
+  }
+  .c-order-complete-btn{
+    padding:3px;
+    font-size:0.55rem;
+    color:#d90460;
+    border-color:#d90460;
+    border-radius: 30px;
+    margin-bottom: 5px;
+  }
+  .bill-quantity{
+    border:2px solid green;
+    margin:0px 2px;
+    padding:0px 5px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .item-description{
+    margin:0px 0px 3px 0px;
+    font-size: 13px;
+  }
+  .veg{
+    &::after{
+     top:7px;
+      width:15px;
+      height: 15px;
+      left:-5px;
+      @media (max-width:399px) {
+       top:4px;
+      }
+    }
+  }
+  .non-veg{
+    &::after{
+     top:7px;
+      width:15px;
+      height: 15px;
+      left:-5px;
+      @media (max-width:399px) {
+       top:4px;
+      }
+    }
+  }
+.c-font-size-1{
+    font-size: 0.9rem ;
+    @media (max-width:399px) {
+      font-size: 0.8rem;
+    }
+}
+  .c-color-blue{
+    border-color: blue !important;
+    border-radius: 10px;
+    background:#dadaff;
+    color:blue
+  }
+
 }
